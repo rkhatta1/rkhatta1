@@ -41,7 +41,7 @@ const About = () => {
           {/* Separate div for grayscale effect */}
           <div className="transition grayscale hover:grayscale-0 duration-[1.2s]">
             <Image
-              src="collage.png"
+              src="https://rkhatta1.github.io/rkhatta1/collage.png"
               alt="Profile Picture"
               width={1920}
               height={1080}

@@ -65,7 +65,7 @@ const Socials = () => {
             </div>
               <div style={getAnimationStyle(0.05)}>
               <CardSmall
-                imageSrc="Me-Portfolio.png"
+                imageSrc="https://rkhatta1.github.io/rkhatta1/Me-Portfolio.png"
                 link="/about"
                 bg="hover:bg-[#513e00]"
                 border="hover:border-gray-600"

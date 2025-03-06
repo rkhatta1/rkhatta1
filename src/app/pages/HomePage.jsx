@@ -38,7 +38,7 @@ const HomePage = () => {
         <div className='childContainer items-center flex flex-row justify-center space-x-[2rem]'>
             <div style={getAnimationStyle(0.4)}>
               <Card
-                  imageSrc='Me-Portfolio.png'
+                  imageSrc='https://rkhatta1.github.io/rkhatta1/Me-Portfolio.png'
                   title='Raajveer Khattar'
                   description=':P'
                   link='/about'
