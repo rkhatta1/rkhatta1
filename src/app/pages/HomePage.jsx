@@ -75,7 +75,6 @@ const HomePage = () => {
             </div>
             <div style={getAnimationStyle(0.6)}>
               <Card
-                  imageSrc='/github-color.jpg'
                   title='Socials'
                   description="let's connect :)"
                   link='/socials'

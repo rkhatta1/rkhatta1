@@ -41,12 +41,13 @@ const About = () => {
           {/* Separate div for grayscale effect */}
           <div className="transition grayscale hover:grayscale-0 duration-[1.2s]">
             <Image
-              src="/collage.png"
+              src="collage.png"
               alt="Profile Picture"
               width={1920}
               height={1080}
               className="rounded-none h-[15rem] w-[35rem] object-cover"
               style={getBlurStyle(0.1)}
+              unoptimized={true}
             />
           </div>
         </div>
