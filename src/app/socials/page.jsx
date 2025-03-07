@@ -89,7 +89,7 @@ const Socials = () => {
               </div>
           </div>
           <div
-            className="childContainer w-full flex flex-row space-x-[8rem]"
+            className="childContainer w-full flex flex-row flex-1 max-w-[50%] space-x-[5rem]"
             style={getAnimationStyle(0.2)}
           >
             <div className="title flex flex-col space-y-[1rem] items-start w-full">
@@ -170,8 +170,9 @@ const Socials = () => {
                 </div>
               </div>
             </div>
+            <div className='w-[0.1rem] rounded-full h-full flex shrink-0 bg-white opacity-10' style={getAnimationStyle(0.25)}></div>
             <div
-              className="aboutPara items-start flex flex-col p-0 m-0 space-y-[1rem]"
+              className="aboutPara items-start flex flex-col p-0 m-0 space-y-[1rem] flex-1 max-w-[50%]"
               style={getAnimationStyle(0.3)}
             >
               <div className="underline underline-offset-4 cursor-default">
