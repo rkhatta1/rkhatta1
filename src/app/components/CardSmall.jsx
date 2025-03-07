@@ -24,15 +24,18 @@ const CardSmall = ({
     whichIcon = <TiSocialLinkedin className="h-[1.5rem] w-[1.5rem] text-white" />;
   } else if (typeOf === "home") {
     whichIcon = <AiOutlineHome className="h-[1.5rem] w-[1.5rem] text-white" />;
+  } else if (typeOf === "resume") {
+    whichIcon = <div className="uppercase text-[0.8rem] h-[1.5rem] font-semibold text-white flex items-center justify-center text-center">Resume</div>;
   }
   
   // Card content without the Link wrapper
   const CardContent = () => (
     <div
       className={`parentDivRef group flex flex-col items-center justify-center space-y-[1.8rem] bg-gray-950 border-[0.3rem] p-[0.8rem] border-gray-800 rounded-[1.2rem] shadow-md overflow-hidden transform transition duration-300 ${border} ${bg} cursor-pointer`}
+      onClick={typeOf === "resume" ? handleDownload : undefined}
     >
       {/* Image Section */}
-      <div className="items-center align-middle mx-auto">
+      <div className="items-center align-middle mx-auto flex">
         {typeOf === 'image' ? (
           <Image
             src={imageSrc}
@@ -56,8 +59,21 @@ const CardSmall = ({
   // Import the transition context
   const { handleNavigation } = React.useContext(TransitionContext);
 
+  const handleDownload = (e) => {
+    e.stopPropagation(); // Prevent any parent onClick handlers from triggering
+    
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = 'https://arizonastateu-my.sharepoint.com/:b:/g/personal/rkhatta1_sundevils_asu_edu/EXo5hRjEZ8NMpTm8yZpk7OwBUTIaksmIaMl_chu015vpoA?e=DGDXvI'; // Path to your resume PDF in the public folder
+    link.download = 'RaajveerKhattar-Resume.pdf'; // Name for the downloaded file
+    link.target = '_blank'; // Open in new tab
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // If link is "#" or empty, don't make it navigable
-  if (link === "#" || !link) {
+  if (link === "#" || !link || typeOf === "resume") {
     return <CardContent />;
   }
 
