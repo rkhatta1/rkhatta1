@@ -34,6 +34,13 @@ const Socials = () => {
     transition: `opacity 1.6s ease ${delay}s, transform 1.6s ease ${delay}s, filter 1.8s ease ${delay}s`,
   });
 
+  const getAnimationOpacity = (delay = 0) => ({
+    opacity: isLoaded ? 0.2 : 0,
+    transform: `translateY(${isLoaded ? 0 : "30px"})`,
+    filter: `blur(${isLoaded ? 0 : "2.2rem"})`,
+    transition: `opacity 1.6s ease ${delay}s, transform 1.6s ease ${delay}s, filter 1.8s ease ${delay}s`,
+  });
+
   // Copy to clipboard function
   const copyToClipboard = (text, setCopied) => {
     navigator.clipboard
@@ -170,7 +177,7 @@ const Socials = () => {
                 </div>
               </div>
             </div>
-            <div className='w-[0.1rem] rounded-full h-full flex shrink-0 bg-white opacity-10' style={getAnimationStyle(0.25)}></div>
+            <div className='w-[0.1rem] rounded-full h-full flex shrink-0 bg-white' style={getAnimationOpacity(0.25)}></div>
             <div
               className="aboutPara items-start flex flex-col p-0 m-0 space-y-[1rem] flex-1 max-w-[50%]"
               style={getAnimationStyle(0.3)}
