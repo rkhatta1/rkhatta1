@@ -75,7 +75,7 @@ const Works = () => {
       // Fading out
       return {
         opacity: 0,
-        filter: 'blur(2.2rem)',
+        filter: 'blur(1.5rem)',
         transition: 'opacity 0.5s ease, filter 0.6s ease',
         position: 'absolute',
         top: 0,
@@ -86,7 +86,7 @@ const Works = () => {
       // Hidden
       return {
         opacity: 0,
-        filter: 'blur(2.2rem)',
+        filter: 'blur(1.5rem)',
         position: 'absolute',
         top: 0,
         left: 0,
@@ -98,7 +98,7 @@ const Works = () => {
 
   return (
     <div className='parentContainer w-full m-0 p-0 overflow-hidden flex lg:hidden h-screen'>
-      <div className='interContainer max-w-[24rem] sm:max-w-[35rem] flex flex-col space-y-[2rem] sm:space-y-[1.5rem] flex-1 mx-auto justify-center'>
+      <div className='interContainer max-w-[24rem] px-[1rem] sm:p-0 sm:max-w-[35rem] flex flex-col space-y-[2rem] sm:space-y-[1.5rem] flex-1 mx-auto justify-center overflow-hidden'>
         <div className="items-start flex flex-row w-full space-x-2.5 sm:space-x-[1rem]">
           <div style={getAnimationStyle(0)}>
             <CardSmall
@@ -172,9 +172,9 @@ const Works = () => {
                     Aug. 2024 - Present
                   </div>
                   <div className='workContent flex flex-col text-start'>
-                    <div className='workTitle text-[1.1rem] font-semibold text-white'>Multimedia Services Assistant, Part Time</div>
-                    <div className='text-sm flex items-center flex-row'><span className='font-semibold mt-[0.15rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>Fulton Schools of Engineering, ASU</span></div>
-                    <div className='workDescription text-sm text-white mt-[0.7rem]'>
+                    <div className='workTitle text-[1rem] font-semibold text-white'>Multimedia Services Assistant, Part Time</div>
+                    <div className='text-[0.8rem] flex items-center flex-row'><span className='font-semibold'><CiLocationOn /></span><span className='ml-[0.2rem]'>Fulton Schools of Engineering, ASU</span></div>
+                    <div className='workDescription text-[0.8rem] text-white mt-[0.7rem]'>
                       I work at the Lecture Capture Studios @LTH as a student worker to assist faculty and staff with the recording and production of multimedia content. I also help with the maintenance of as well as troubleshooting the studio equipment and the multimedia content for online courses.
                     </div>
                   </div>
@@ -185,9 +185,9 @@ const Works = () => {
                     Feb. 2023 - May 2023
                   </div>
                   <div className='workContent flex flex-col text-start group-hover:text-white' style={{ transition: 'color 0.3s ease' }}>
-                    <div className='workTitle text-[1.1rem] font-semibold '>Flask Developer Intern</div>
-                    <div className='text-sm flex flex-row items-center'><span className='font-semibold mt-[0.2rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>The Trade Journal Project</span></div>
-                    <div className='workDescription text-sm mt-[0.7rem]'>
+                    <div className='workTitle text-[1rem] font-semibold '>Flask Developer Intern, Full Time</div>
+                    <div className='text-[0.8rem] flex flex-row items-center'><span className='font-semibold'><CiLocationOn /></span><span className='ml-[0.2rem]'>The Trade Journal Project</span></div>
+                    <div className='workDescription text-[0.8rem] mt-[0.7rem]'>
                       I joined Veeral Patel and his team to work on an AI enabled fintech product. I was majorly responsible for contributing to the authentication pipeline and the logic for the trade instruments -- working in a cross-functional team to deliver a high-quality product.
                     </div>
                   </div>
@@ -203,9 +203,9 @@ const Works = () => {
                     Jan. 2024 - Dec. 2025 (Ongoing)
                   </div>
                   <div className='workContent flex flex-col text-start'>
-                    <div className='workTitle text-[1.1rem] font-semibold'>Masters in Science, Computer Software Engineering</div>
-                    <div className='text-sm flex flex-row'><span className='font-semibold mt-[0.2rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>Ira A. Fulton School of Engineering, Arizona State University</span></div>
-                    <div className='workDescription text-sm mt-[0.7rem]'>
+                    <div className='workTitle text-[1rem] font-semibold'>Masters in Science, Computer Software Engineering</div>
+                    <div className='text-[0.8rem] flex flex-row items-center'><span className='font-semibold'><CiLocationOn /></span><span className='ml-[0.2rem]'>Ira A. Fulton School of Engineering, ASU</span></div>
+                    <div className='workDescription text-[0.8rem] mt-[0.7rem]'>
                       Areas of interest: Advanced Data Structures, Software Design, Software Architecture, Continous Integration, Deployment, and Delivery, Workflow Automation, Big Data, Cloud Computing and Large Language Models.
                     </div>
                   </div>
@@ -216,9 +216,9 @@ const Works = () => {
                     July 2019 - June 2023
                   </div>
                   <div className='workContent flex flex-col text-start group-hover:text-white' style={{ transition: 'color 0.3s ease' }}>
-                    <div className='workTitle text-[1.1rem] font-semibold'>Bachelors in Technology, Computer Science & Engineering</div>
-                    <div className='text-sm flex flex-row'><span className='font-semibold mt-[0.2rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>Manipal University, Jaipur</span></div>
-                    <div className='workDescription text-sm mt-[0.7rem]'>
+                    <div className='workTitle text-[1rem] font-semibold'>Bachelors in Technology, Computer Science & Engineering</div>
+                    <div className='text-[0.8rem] flex flex-row items-center'><span className='font-semibold'><CiLocationOn /></span><span className='ml-[0.2rem]'>Manipal University, Jaipur</span></div>
+                    <div className='workDescription text-[0.8rem] mt-[0.7rem]'>
                       Key concepts I was exposed to: Data Structures, Algorithms, Operating Systems, Database Management Systems, Computer Networks, Neural Networks, Shell Programming, Computer Vision, Web Development, and Object-Oriented Programming.
                     </div>
                   </div>

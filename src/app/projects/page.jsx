@@ -33,7 +33,7 @@ const Projects = () => {
 
   return (
     <div className="parentContainer w-full m-0 p-0 overflow-hidden flex h-screen">
-      <div className="interContainer max-w-[24rem] sm:max-w-[35rem] lg:max-w-[60rem] flex flex-col space-y-[1.5rem] mx-auto justify-center">
+      <div className="interContainer max-w-[24.4rem] px-[1.2rem] sm:p-0 sm:max-w-[35rem] lg:max-w-[60rem] flex flex-col space-y-[1.5rem] mx-auto justify-center overflow-hidden">
         <div className="items-start flex flex-row w-full space-x-[1rem]">
           <div style={getAnimationStyle(0)}>
             <CardSmall
@@ -102,10 +102,10 @@ const Projects = () => {
                 >
                   <div className="flex flex-row space-x-[0.8rem] sm:space-x-[1rem] items-start" style={getAnimationStyle(0.3)}>
                     <div className="flex flex-col items-start space-y-[0rem]">
-                      <div className="workTitle sm:text-[1rem] lg:text-[1.1rem] font-semibold text-white">
+                      <div className="workTitle text-[1rem] lg:text-[1.1rem] font-semibold text-white">
                         SplitThat - AI enabled splitting for Splitwise
                       </div>
-                      <span className="text-[0.75rem] sm:text-[0.75rem] lg:text-sm">
+                      <span className="text-[0.75rem] lg:text-sm">
                         &#123; GeminiAPI, TesseractOCR, Next.js, SplitwiseAPI
                         &#125;
                       </span>
@@ -123,7 +123,7 @@ const Projects = () => {
                       current
                     </div>
                   </div>
-                  <div className="workDescription text-[0.9rem] sm:text-[0.8rem] lg:text-sm text-white mt-[0.7rem]" style={getAnimationStyle(0.35)}>
+                  <div className="workDescription text-[0.8rem] sm:text-[0.8rem] lg:text-sm text-white mt-[0.7rem]" style={getAnimationStyle(0.35)}>
                     SplitThat, simply put, is a web application (for now) that
                     uses AI to split bills. The flow is simple: upload an image
                     of the bill, and the app will automatically detect the items

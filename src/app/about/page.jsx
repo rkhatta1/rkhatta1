@@ -31,9 +31,9 @@ const About = () => {
   });
 
   return (
-    <div className="parentContainer flex flex-col w-full h-screen mx-auto justify-center">
+    <div className="parentContainer overflow-hidden flex flex-col w-full h-screen mx-auto justify-center">
       <div
-        className="siblingsContainer flex flex-col items-center max-w-[23rem] sm:max-w-[28rem] lg:max-w-[35rem] mx-auto space-y-[0.5rem] sm:space-y-[1rem]"
+        className="siblingsContainer flex flex-col flex-1 justify-center items-center max-w-[27rem] px-[2.5rem] sm:p-0 sm:max-w-[28rem] lg:max-w-[35rem] mx-auto space-y-[0.5rem] sm:space-y-[1rem] overflow-hidden"
         style={getAnimationStyle(0)}
       >
         {/* Wrapper div with animation styles */}
@@ -45,7 +45,7 @@ const About = () => {
               alt="Profile Picture"
               width={1920}
               height={1080}
-              className="rounded-none h-[11.5rem] w-[23rem] sm:h-[14rem] sm:w-[28rem] lg:h-[15rem] lg:w-[35rem] object-cover"
+              className="rounded-none h-[11rem] w-[22rem] sm:h-[14rem] sm:w-[28rem] lg:h-[15rem] lg:w-[35rem] object-cover"
               style={getBlurStyle(0.1)}
               unoptimized={true}
             />

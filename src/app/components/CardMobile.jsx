@@ -30,7 +30,7 @@ const CardMobile = ({
   // Card content without the Link wrapper
   const CardContentMobile = () => (
     <div
-      className={`parentDivRef group flex flex-col items-start space-y-[1rem] w-[10.5rem] bg-gray-950 border-[0.3rem] h-[10rem] p-[1.2rem] border-gray-800 rounded-[2.5rem] shadow-md overflow-hidden transform transition duration-300 ${rotate} hover:rotate-0 ${border} ${bg} cursor-pointer`}
+      className={`parentDivRef group flex flex-col items-start space-y-[1rem] w-[10rem] bg-gray-950 border-[0.3rem] h-[10rem] p-[1.2rem] border-gray-800 rounded-[2.5rem] shadow-md overflow-hidden transform transition duration-300 ${rotate} hover:rotate-0 ${border} ${bg} cursor-pointer`}
     >
       {/* Image Section */}
       <div className="items-start w-full mx-auto">

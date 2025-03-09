@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppinsSans.variable} ${geistMono.variable} antialiased overflow-y-hidden`}
+        className={`${poppinsSans.variable} ${geistMono.variable} antialiased overflow-hidden`}
       >
         <PageTransition>
           {children}
