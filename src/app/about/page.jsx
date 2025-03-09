@@ -33,7 +33,7 @@ const About = () => {
   return (
     <div className="parentContainer overflow-hidden flex flex-col w-full h-screen mx-auto justify-center">
       <div
-        className="siblingsContainer flex flex-col flex-1 justify-center items-center max-w-[27rem] px-[2.5rem] sm:p-0 sm:max-w-[28rem] lg:max-w-[35rem] mx-auto space-y-[0.5rem] sm:space-y-[1rem] overflow-hidden"
+        className="siblingsContainer flex flex-col flex-1 justify-center items-center max-w-[27rem] px-[2.5rem] sm:px-[3rem] sm:max-w-[34rem] lg:max-w-[41rem] mx-auto space-y-[0.5rem] sm:space-y-[1rem] overflow-hidden"
         style={getAnimationStyle(0)}
       >
         {/* Wrapper div with animation styles */}

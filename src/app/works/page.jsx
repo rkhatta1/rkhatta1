@@ -98,7 +98,7 @@ const Works = () => {
 
   return (
     <div className='parentContainer w-full m-0 p-0 overflow-hidden flex lg:hidden h-screen'>
-      <div className='interContainer max-w-[24rem] px-[1rem] sm:p-0 sm:max-w-[35rem] flex flex-col space-y-[2rem] sm:space-y-[1.5rem] flex-1 mx-auto justify-center overflow-hidden'>
+      <div className='interContainer max-w-[26rem] px-[2rem] sm:px-[3rem] sm:max-w-[41rem] flex flex-col space-y-[2rem] sm:space-y-[1.5rem] flex-1 mx-auto justify-center overflow-hidden'>
         <div className="items-start flex flex-row w-full space-x-2.5 sm:space-x-[1rem]">
           <div style={getAnimationStyle(0)}>
             <CardSmall
