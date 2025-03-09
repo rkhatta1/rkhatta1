@@ -24,7 +24,9 @@ const HomePageMobile = () => {
   });
 
   return (
-    <div className='parentContainer mx-auto px-[2.5rem] flex flex-col h-screen overflow-hidden justify-center align-middle space-y-[4rem]'>
+    <div className='parentContainer mx-auto flex h-screen overflow-hidden justify-center align-middle'>
+      <div className='siblingsContainer flex flex-col mx-auto px-[2.5rem] h-[85%] overflow-hidden justify-center align-middle space-y-[4rem]'>
+
         <div className='childContainer items-center flex flex-col'>
             <div 
               className='text-start flex flex-col cursor-default space-y-[0.5rem]'
@@ -89,6 +91,7 @@ const HomePageMobile = () => {
             </div>
             </div>
         </div>
+      </div>
     </div>
   );
 };

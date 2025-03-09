@@ -98,7 +98,7 @@ const Works = () => {
 
   return (
     <div className='parentContainer w-full m-0 p-0 overflow-hidden flex lg:hidden h-screen'>
-      <div className='interContainer max-w-[26rem] px-[2rem] sm:px-[3rem] sm:max-w-[41rem] flex flex-col space-y-[2rem] sm:space-y-[1.5rem] flex-1 mx-auto justify-center overflow-hidden'>
+      <div className='interContainer max-w-[27rem] px-[1.2rem] sm:px-[3rem] sm:max-w-[41rem] sm:h-full h-[85%] flex flex-col space-y-[2rem] sm:space-y-[1.5rem] flex-1 mx-auto justify-center overflow-hidden'>
         <div className="items-start flex flex-row w-full space-x-2.5 sm:space-x-[1rem]">
           <div style={getAnimationStyle(0)}>
             <CardSmall
@@ -108,7 +108,7 @@ const Works = () => {
               typeOf="home"
             />
           </div>
-          <div style={getAnimationStyle(0.05)}>
+          <div className='shrink-0' style={getAnimationStyle(0.05)}>
             <CardSmall
               imageSrc="https://rkhatta1.github.io/rkhatta1/Me-Portfolio.png"
               link="/about"

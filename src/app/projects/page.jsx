@@ -33,7 +33,7 @@ const Projects = () => {
 
   return (
     <div className="parentContainer w-full m-0 p-0 overflow-hidden lg:overflow-auto flex h-screen">
-      <div className="interContainer max-w-[27rem] px-[2.5rem] sm:p-0 sm:max-w-[39rem] sm:px-[2rem] lg:max-w-[60rem] flex flex-col space-y-[1.5rem] mx-auto justify-center overflow-hidden lg:overflow-auto">
+      <div className="interContainer max-w-[27rem] px-[2.5rem] sm:p-0 sm:max-w-[39rem] sm:px-[2rem] lg:max-w-[60rem] h-[85%] sm:h-full flex flex-col space-y-[1.5rem] mx-auto justify-center overflow-hidden lg:overflow-auto">
         <div className="items-start flex flex-row w-full space-x-[1rem]">
           <div style={getAnimationStyle(0)}>
             <CardSmall
