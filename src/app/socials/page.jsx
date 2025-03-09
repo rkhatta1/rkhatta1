@@ -57,7 +57,7 @@ const Socials = () => {
   return (
     <div className="parentContainer flex flex-col w-full h-screen mx-auto justify-center">
       <div
-        className="siblingsContainer flex flex-col max-w-[60rem] mx-auto space-y-[1rem]"
+        className="siblingsContainer flex flex-col sm:max-w-[35rem] lg:max-w-[60rem] mx-auto space-y-[1rem]"
       >
         <div className="flex flex-col w-full justify-center space-y-[2rem]">
           <div className="items-start flex flex-row w-full space-x-[1rem]">
@@ -86,25 +86,33 @@ const Socials = () => {
                 typeOf="project"
               />
               </div>
-              <div style={getAnimationStyle(0.15)}>
-              <CardSmall
-                link="/work"
-                bg="hover:bg-[#003738]"
-                border="hover:border-gray-600"
-                typeOf="work"
-              />
-              </div>
+              <div className="lg:flex hidden" style={getAnimationStyle(0.15)}>
+            <CardSmall
+              link="/work"
+              bg="hover:bg-[#001e17]"
+              border="hover:border-gray-600"
+              typeOf="work"
+            />
+          </div>
+          <div className="lg:hidden flex" style={getAnimationStyle(0.15)}>
+            <CardSmall
+              link="/works"
+              bg="hover:bg-[#001e17]"
+              border="hover:border-gray-600"
+              typeOf="work"
+            />
+          </div>
           </div>
           <div
-            className="childContainer w-full flex flex-row flex-1 max-w-[50%] space-x-[5rem]"
+            className="childContainer w-full flex flex-row flex-1 max-w-[50%] sm:space-x-[2rem] lg:space-x-[5rem]"
             style={getAnimationStyle(0.2)}
           >
             <div className="title flex flex-col space-y-[1rem] items-start w-full">
               <div className="underline underline-offset-4 cursor-default">
-                <p className="text-[1.5rem] font-semibold">Contact Information</p>
+                <p className="sm:text-[1.2rem] lg:text-[1.5rem] font-semibold">Contact Information</p>
               </div>
               <div className="flex flex-col space-y-[0.6rem]">
-                <div className="flex flex-row space-x-2 text-lg group relative">
+                <div className="flex flex-row space-x-2 text-md group relative">
                   <span className="mt-[0.2rem]">
                     <MdOutlineEmail />
                   </span>
@@ -141,7 +149,7 @@ const Socials = () => {
                     )}
                   </span>
                 </div>
-                <div className="flex flex-row space-x-2 text-lg group relative">
+                <div className="flex flex-row space-x-2 text-md group relative">
                   <span className="mt-[0.25rem]">
                     <MdOutlinePhoneInTalk />
                   </span>
@@ -183,7 +191,7 @@ const Socials = () => {
               style={getAnimationStyle(0.3)}
             >
               <div className="underline underline-offset-4 cursor-default">
-                <p className="text-[1.5rem] font-semibold">Socials</p>
+                <p className="sm:text-[1.2rem] lg:text-[1.5rem] font-semibold">Socials</p>
               </div>
               <div className="flex flex-row space-x-[1.5rem]">
                 <a

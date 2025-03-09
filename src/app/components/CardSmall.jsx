@@ -15,25 +15,25 @@ const CardSmall = ({
   border = "hover:border-gray-800",
   typeOf = "icon",
 }) => {
-  var whichIcon = <FaLaptopCode className="h-[1.5rem] w-[1.5rem] text-white" />;
+  var whichIcon = <FaLaptopCode className="sm:h-[1.2rem] sm:w-[1.2rem] lg:h-[1.5rem] lg:w-[1.5rem] text-white" />;
   if (typeOf === "work") {
-    whichIcon = <MdOutlineWorkOutline className="h-[1.5rem] w-[1.5rem] text-white" />;
+    whichIcon = <MdOutlineWorkOutline className="sm:h-[1.2rem] sm:w-[1.2rem] lg:h-[1.5rem] lg:w-[1.5rem] text-white" />;
   } else if (typeOf === "project") {
-    whichIcon = <FaLaptopCode className="h-[1.5rem] w-[1.5rem] text-white" />;
+    whichIcon = <FaLaptopCode className="sm:h-[1.2rem] sm:w-[1.2rem] lg:h-[1.5rem] lg:w-[1.5rem] text-white" />;
   } else if (typeOf === "social") {
-    whichIcon = <TiSocialLinkedin className="h-[1.5rem] w-[1.5rem] text-white" />;
+    whichIcon = <TiSocialLinkedin className="sm:h-[1.2rem] sm:w-[1.2rem] lg:h-[1.5rem] lg:w-[1.5rem] text-white" />;
   } else if (typeOf === "home") {
-    whichIcon = <AiOutlineHome className="h-[1.5rem] w-[1.5rem] text-white" />;
+    whichIcon = <AiOutlineHome className="sm:h-[1.2rem] sm:w-[1.2rem] lg:h-[1.5rem] lg:w-[1.5rem] text-white" />;
   } else if (typeOf === "resume") {
-    whichIcon = <div className="uppercase text-[0.8rem] h-[1.5rem] font-semibold text-white flex items-center justify-center text-center">Resume</div>;
+    whichIcon = <div className="uppercase text-[0.8rem] sm:h-[1.2rem] lg:h-[1.5rem] font-semibold text-white flex items-center justify-center text-center">Resume</div>;
   } else if (typeOf === "prevProjects") {
-    whichIcon = <a href="https://github.com/rkhatta1" target="_blank" className="lowercase text-[0.8rem] font-semibold text-white flex items-center justify-center text-center">past projects + contributions</a>;
+    whichIcon = <a href="https://github.com/rkhatta1" target="_blank" className="lowercase sm:text-[0.75rem] lg:text-[0.8rem] font-semibold text-white flex items-center justify-center text-center">past projects + contributions</a>;
   }
   
   // Card content without the Link wrapper
   const CardContent = () => (
     <div
-      className={`parentDivRef group flex flex-col items-center justify-center space-y-[1.8rem] bg-gray-950 border-[0.3rem] p-[0.8rem] border-gray-800 ${typeOf === 'prevProjects' ? 'rounded-full' : ''} rounded-[1.2rem] shadow-md overflow-hidden transform transition duration-300 ${border} ${bg} cursor-pointer`}
+      className={`parentDivRef group flex items-center justify-center bg-gray-950 border-[0.3rem] p-[0.8rem] border-gray-800 ${typeOf === 'prevProjects' ? 'rounded-full' : ''} rounded-[1.2rem] shadow-md overflow-hidden transform transition duration-300 ${border} ${bg} cursor-pointer`}
       onClick={typeOf === "resume" ? handleDownload : undefined}
     >
       {/* Image Section */}
@@ -44,7 +44,7 @@ const CardSmall = ({
             alt={title}
             width={600}
             height={600}
-            className="h-[1.5rem] w-[1.5rem]" 
+            className="h-[1.2rem] w-[1.2rem] lg:h-[1.5rem] lg:w-[1.5rem]" 
           />
         ) : (
           whichIcon

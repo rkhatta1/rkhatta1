@@ -32,7 +32,7 @@ const Work = () => {
   });
 
   return (
-    <div className='parentContainer w-full m-0 p-0 overflow-hidden flex h-screen'>
+    <div className='parentContainer w-full m-0 p-0 overflow-hidden hidden lg:flex h-screen'>
       <div className='interContainer max-w-[80rem] flex flex-col space-y-[2rem] mx-auto justify-center'>
       <div className="items-start flex flex-row w-full space-x-[1rem]">
             <div style={getAnimationStyle(0)}>
