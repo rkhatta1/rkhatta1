@@ -9,23 +9,19 @@ import {
 } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
 const Socials = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
   const [showEmailTooltip, setShowEmailTooltip] = useState(false);
   const [showPhoneTooltip, setShowPhoneTooltip] = useState(false);
-
   useEffect(() => {
     // Small timeout to ensure DOM is fully ready
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 20);
-
     return () => clearTimeout(timer);
   }, []);
-
   // Animation style creator function
   const getAnimationStyle = (delay = 0) => ({
     opacity: isLoaded ? 1 : 0,
@@ -33,14 +29,12 @@ const Socials = () => {
     filter: `blur(${isLoaded ? 0 : "2.2rem"})`,
     transition: `opacity 1.6s ease ${delay}s, transform 1.6s ease ${delay}s, filter 1.8s ease ${delay}s`,
   });
-
   const getAnimationOpacity = (delay = 0) => ({
     opacity: isLoaded ? 0.2 : 0,
     transform: `translateY(${isLoaded ? 0 : "30px"})`,
     filter: `blur(${isLoaded ? 0 : "2.2rem"})`,
     transition: `opacity 1.6s ease ${delay}s, transform 1.6s ease ${delay}s, filter 1.8s ease ${delay}s`,
   });
-
   // Copy to clipboard function
   const copyToClipboard = (text, setCopied) => {
     navigator.clipboard
@@ -53,7 +47,6 @@ const Socials = () => {
         console.error("Failed to copy text: ", err);
       });
   };
-
   return (
     <div className="parentContainer flex flex-col w-full h-screen mx-auto justify-center">
       <div
@@ -104,12 +97,12 @@ const Socials = () => {
           </div>
           </div>
           <div
-            className="childContainer w-full flex flex-row flex-1 max-w-[50%] sm:space-x-[2rem] lg:space-x-[5rem]"
+            className="childContainer w-full flex flex-col sm:flex-row flex-1 max-w-full sm:max-w-[50%] space-y-[2rem] sm:space-y-0 sm:space-x-[2rem] lg:space-x-[5rem]"
             style={getAnimationStyle(0.2)}
           >
             <div className="title flex flex-col space-y-[1rem] items-start w-full">
               <div className="underline underline-offset-4 cursor-default">
-                <p className="sm:text-[1.2rem] lg:text-[1.5rem] font-semibold">Contact Information</p>
+                <p className="text-[1.2rem] lg:text-[1.5rem] font-semibold">Contact Information</p>
               </div>
               <div className="flex flex-col space-y-[0.6rem]">
                 <div className="flex flex-row space-x-2 text-md group relative">
@@ -185,13 +178,14 @@ const Socials = () => {
                 </div>
               </div>
             </div>
-            <div className='w-[0.1rem] rounded-full h-full flex shrink-0 bg-white' style={getAnimationOpacity(0.25)}></div>
+            {/* Divider line - hidden on mobile, visible on sm and up */}
+            <div className='flex w-full h-[0.1rem] sm:w-[0.1rem] rounded-full sm:h-full shrink-0 bg-white' style={getAnimationOpacity(0.25)}></div>
             <div
-              className="aboutPara items-start flex flex-col p-0 m-0 space-y-[1rem] flex-1 max-w-[50%]"
+              className="aboutPara items-start flex flex-col p-0 m-0 space-y-[1rem] flex-1 sm:max-w-[50%]"
               style={getAnimationStyle(0.3)}
             >
               <div className="underline underline-offset-4 cursor-default">
-                <p className="sm:text-[1.2rem] lg:text-[1.5rem] font-semibold">Socials</p>
+                <p className="text-[1.2rem] lg:text-[1.5rem] font-semibold">Socials</p>
               </div>
               <div className="flex flex-row space-x-[1.5rem]">
                 <a
@@ -234,5 +228,4 @@ const Socials = () => {
     </div>
   );
 };
-
 export default Socials;

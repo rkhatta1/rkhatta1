@@ -98,8 +98,8 @@ const Works = () => {
 
   return (
     <div className='parentContainer w-full m-0 p-0 overflow-hidden flex lg:hidden h-screen'>
-      <div className='interContainer max-w-[35rem] flex flex-col space-y-[1.5rem] flex-1 mx-auto justify-center'>
-        <div className="items-start flex flex-row w-full space-x-[1rem]">
+      <div className='interContainer max-w-[24rem] sm:max-w-[35rem] flex flex-col space-y-[2rem] sm:space-y-[1.5rem] flex-1 mx-auto justify-center'>
+        <div className="items-start flex flex-row w-full space-x-2.5 sm:space-x-[1rem]">
           <div style={getAnimationStyle(0)}>
             <CardSmall
               link="/"
@@ -145,16 +145,16 @@ const Works = () => {
         
         <div className='siblingsContainer w-full flex flex-col items-start align-top h-[30rem] justify-start cursor-default'>
           {/* Section Toggle Tabs */}
-          <div className='tabs-container flex flex-row space-x-4 mb-[2rem]' style={getAnimationStyle(0)}>
+          <div className='tabs-container flex flex-row space-x-[1.5rem] sm:space-x-4 mb-[1.5rem] sm:mb-[2rem]' style={getAnimationStyle(0)}>
             <button 
-              className={`text-2xl font-bold text-start ${activeSection === 'work' ? 'text-white underline' : 'text-gray-400'} transition-all duration-300 hover:text-white`}
+              className={`text-[1.3rem] sm:text-2xl font-bold text-start ${activeSection === 'work' ? 'text-white underline' : 'text-gray-400'} transition-all duration-300 hover:text-white`}
               onClick={() => handleSectionChange('work')}
               disabled={isTransitioning}
             >
               Work Experience
             </button>
             <button 
-              className={`text-2xl font-bold text-start ${activeSection === 'education' ? 'text-white underline' : 'text-gray-400'} transition-all duration-300 hover:text-white`}
+              className={`text-[1.3rem] sm:text-2xl font-bold text-start ${activeSection === 'education' ? 'text-white underline' : 'text-gray-400'} transition-all duration-300 hover:text-white`}
               onClick={() => handleSectionChange('education')}
               disabled={isTransitioning}
             >
@@ -173,7 +173,7 @@ const Works = () => {
                   </div>
                   <div className='workContent flex flex-col text-start'>
                     <div className='workTitle text-[1.1rem] font-semibold text-white'>Multimedia Services Assistant, Part Time</div>
-                    <div className='text-sm flex flex-row'><span className='font-semibold mt-[0.15rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>Fulton Schools of Engineering, ASU</span></div>
+                    <div className='text-sm flex items-center flex-row'><span className='font-semibold mt-[0.15rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>Fulton Schools of Engineering, ASU</span></div>
                     <div className='workDescription text-sm text-white mt-[0.7rem]'>
                       I work at the Lecture Capture Studios @LTH as a student worker to assist faculty and staff with the recording and production of multimedia content. I also help with the maintenance of as well as troubleshooting the studio equipment and the multimedia content for online courses.
                     </div>
@@ -186,7 +186,7 @@ const Works = () => {
                   </div>
                   <div className='workContent flex flex-col text-start group-hover:text-white' style={{ transition: 'color 0.3s ease' }}>
                     <div className='workTitle text-[1.1rem] font-semibold '>Flask Developer Intern</div>
-                    <div className='text-sm flex flex-row'><span className='font-semibold mt-[0.2rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>The Trade Journal Project</span></div>
+                    <div className='text-sm flex flex-row items-center'><span className='font-semibold mt-[0.2rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>The Trade Journal Project</span></div>
                     <div className='workDescription text-sm mt-[0.7rem]'>
                       I joined Veeral Patel and his team to work on an AI enabled fintech product. I was majorly responsible for contributing to the authentication pipeline and the logic for the trade instruments -- working in a cross-functional team to deliver a high-quality product.
                     </div>
