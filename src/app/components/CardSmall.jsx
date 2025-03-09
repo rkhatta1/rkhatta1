@@ -26,12 +26,14 @@ const CardSmall = ({
     whichIcon = <AiOutlineHome className="h-[1.5rem] w-[1.5rem] text-white" />;
   } else if (typeOf === "resume") {
     whichIcon = <div className="uppercase text-[0.8rem] h-[1.5rem] font-semibold text-white flex items-center justify-center text-center">Resume</div>;
+  } else if (typeOf === "prevProjects") {
+    whichIcon = <a href="https://github.com/rkhatta1" target="_blank" className="lowercase text-[0.8rem] font-semibold text-white flex items-center justify-center text-center">past projects + contributions</a>;
   }
   
   // Card content without the Link wrapper
   const CardContent = () => (
     <div
-      className={`parentDivRef group flex flex-col items-center justify-center space-y-[1.8rem] bg-gray-950 border-[0.3rem] p-[0.8rem] border-gray-800 rounded-[1.2rem] shadow-md overflow-hidden transform transition duration-300 ${border} ${bg} cursor-pointer`}
+      className={`parentDivRef group flex flex-col items-center justify-center space-y-[1.8rem] bg-gray-950 border-[0.3rem] p-[0.8rem] border-gray-800 ${typeOf === 'prevProjects' ? 'rounded-full' : ''} rounded-[1.2rem] shadow-md overflow-hidden transform transition duration-300 ${border} ${bg} cursor-pointer`}
       onClick={typeOf === "resume" ? handleDownload : undefined}
     >
       {/* Image Section */}
@@ -73,7 +75,7 @@ const CardSmall = ({
   };
 
   // If link is "#" or empty, don't make it navigable
-  if (link === "#" || !link || typeOf === "resume") {
+  if (link === "#" || !link || typeOf === "resume" || typeOf === "prevProjects") {
     return <CardContent />;
   }
 
