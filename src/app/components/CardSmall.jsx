@@ -66,7 +66,7 @@ const CardSmall = ({
     
     // Create a link element
     const link = document.createElement('a');
-    link.href = 'https://arizonastateu-my.sharepoint.com/:b:/g/personal/rkhatta1_sundevils_asu_edu/EXo5hRjEZ8NMpTm8yZpk7OwBUTIaksmIaMl_chu015vpoA?e=DGDXvI'; // Path to your resume PDF in the public folder
+    link.href = 'https://arizonastateu-my.sharepoint.com/:b:/g/personal/rkhatta1_sundevils_asu_edu/EdPVtsEq-QlFmKocy94nyEcBA3twtx6eMBE61Rz2pgfgHQ?e=2asoyN'; // Path to your resume PDF in the public folder
     link.download = 'RaajveerKhattar-Resume.pdf'; // Name for the downloaded file
     link.target = '_blank'; // Open in new tab
     document.body.appendChild(link);
