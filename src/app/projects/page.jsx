@@ -103,7 +103,7 @@ const Projects = () => {
                   <div className="flex flex-row space-x-[0.8rem] md:space-x-[2rem] justify-between items-start" style={getAnimationStyle(0.3)}>
                     <a href="https://github.com/rkhatta1/ChapterGen" target="_blank" className="cursor-pointer flex flex-col items-start space-y-[0rem]">
                       <div className="workTitle text-[1rem] lg:text-[1.1rem] font-semibold text-white">
-                        ChapGen - AI YouTube Channel Generator
+                        ChapGen - AI YouTube Chapter Generator
                       </div>
                       <span className="text-[0.75rem] lg:text-sm">
                         &#123; Kubernetes, Kafka, Docker, GeminiAPI, Nginx, Google Cloud, GitHub Actions
