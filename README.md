@@ -14,10 +14,9 @@ current topics of interest (in no particular order): clean code, big data, gener
 
 ### Tech Stack
 
-I tend to gravitate towards **Javacript** and **Python** the most, with either **MongoDB** or **Supabase** for the first choice relational databases and **Kafka** for queuing. I also tinker with **Typescript** every now and then.
+I tend to gravitate towards **Javacript/Typescript** and **Python** the most, with **PostgreSQL** as the first choice RDB and **GCP / Vercel** for deployment. I also tinker with **GitHub Actions** every now and then, for setting up CI/CD and benchmarking workflows.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Nodejs](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-%233776AB?style=flat&logo=python&logoColor=white)
 ![Typecript](https://img.shields.io/badge/Typecript-%233178C6?style=flat&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
@@ -29,6 +28,7 @@ I tend to gravitate towards **Javacript** and **Python** the most, with either *
 ![Kafka](https://img.shields.io/badge/-Kafka-231F20?logo=apache-kafka&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
 ![Amazon AWS](https://img.shields.io/badge/Amazon%20AWS-232F3E?logo=amazon-aws)
+![Amazon AWS](https://img.shields.io/badge/GoogleCloud-4285F4?logo=googlecloud)
 
 ### Let's connect!
 
