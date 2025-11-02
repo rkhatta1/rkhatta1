@@ -41,6 +41,7 @@ const CardMobile = ({
             width={600}
             height={600}
             className="h-[2rem] w-[2rem]" 
+            priority={typeOf === 'image'}
           />
         ) : (
           whichIcon

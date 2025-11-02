@@ -101,12 +101,12 @@ const Projects = () => {
                   className="workContent flex flex-col text-start"
                 >
                   <div className="flex flex-row space-x-[0.8rem] md:space-x-[2rem] justify-between items-start" style={getAnimationStyle(0.3)}>
-                    <a href="https://github.com/rkhatta1/ChapterGen" target="_blank" className="cursor-pointer flex flex-col items-start space-y-[0rem]">
+                    <a href="https://rkhatta1.github.io/edit0-landing/" target="_blank" className="cursor-pointer flex flex-col items-start space-y-[0rem]">
                       <div className="workTitle text-[1rem] lg:text-[1.1rem] font-semibold text-white">
-                        ChapGen - AI YouTube Chapter Generator
+                        Edit0 - An agentic multi-cam video editing copilot
                       </div>
                       <span className="text-[0.75rem] lg:text-sm">
-                        &#123; Kubernetes, Kafka, Docker, GeminiAPI, Nginx, Google Cloud, GitHub Actions
+                        &#123; Python, Docker, PostgreSQL + pgvector, GeminiAPI, apple/FastVLM, Google Cloud Vision
                         &#125;
                       </span>
                     </a>
@@ -124,7 +124,7 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="workDescription text-[0.8rem] sm:text-[0.8rem] text-justify lg:text-sm text-white mt-[0.7rem]" style={getAnimationStyle(0.35)}>
-                    ChapGen is a smart tool I built to automatically create YouTube chapters, saving creators a ton of tedious work. Under the hood, it’s a full-blown cloud application running on Kubernetes, where a fleet of microservices use Kafka to talk to each other. The coolest part is the serverless GPU worker on Google Cloud Run that uses AI to transcribe the audio, spinning up when needed and scaling to zero to keep costs super low. This project was an epic journey from a local idea to a globally deployed, production-grade application, showcasing a complete, modern, event-driven architecture.
+    A video editing copilot that processes multi-cam and multi-audio feeds real-time, and spins up an agentic pipeline that understands visual context, performs speaker diarization, holds context in an intelligent memory layer, and has an LLM in the pipeline that orchestrates and generates an 'fcpxml' file that can be imported to any video-editing software and automatically populates the media files and the timeline with multi-cam cuts, ready to render.
                   </div>
                 </div>
               </div>
@@ -145,28 +145,30 @@ const Projects = () => {
                   className="workContent flex flex-col text-start"
                 >
                   <div className="flex flex-row space-x-[0.8rem] md:space-x-[1.5rem] justify-between items-start" style={getAnimationStyle(0.45)}>
-                    <a href="https://github.com/rkhatta1/TheVersusProject" target="_blank" className="cursor-pointer flex flex-col items-start space-y-[0rem]">
+                    <a href="https://github.com/rkhatta1/equate-tts" target="_blank" className="cursor-pointer flex flex-col items-start space-y-[0rem]">
                       <div className="workTitle text-[1rem] lg:text-[1.1rem] font-semibold text-white">
-                        The Versus Project - AI powered Football Content Agent
+                        Equate-TTS - A Python SDK for properly synthesizing math equations
                       </div>
                       <span className="text-[0.75rem] lg:text-sm">
-                        &#123; Docker, Kaggle, PostgreSQL, GeminiAPI, HuggingFace, Ngrok
+                        &#123; Python, SpeechifyAPI, ElevenLabsAPI, GeminiAPI
                         &#125;
                       </span>
                     </a>
                     <div
-                      className="self-start mr-0 px-[0.6rem] py-[0.35rem] hidden lg:flex items-center sm:text-[0.55rem] lg:text-[0.6rem] border-gray-400 border-2 rounded-full text-gray-400"
+                      className="self-start mr-0 px-[0.6rem] py-[0.35rem] hidden lg:flex items-center sm:text-[0.55rem] lg:text-[0.6rem] border-white border-2 rounded-full transition animate-pulse"
+                      style={{ animationDuration: "4s" }}
                     >
-                      June 2025 - July 2025
+                      currently building
                     </div>
                     <div
-                      className="self-start px-[0.6rem] py-[0.35rem] hidden sm:flex lg:hidden items-center text-[0.55rem] border-gray-400 border-2 text-gray-400 rounded-full"
+                      className="self-start px-[0.6rem] py-[0.35rem] flex lg:hidden items-center text-[0.55rem] border-white border-2 rounded-full transition animate-pulse"
+                      style={{ animationDuration: "4s" }}
                     >
-                      July, 25
+                      current
                     </div>
                   </div>
                   <div className="workDescription text-[0.8rem] sm:text-[0.8rem] text-justify lg:text-sm text-white mt-[0.7rem]" style={getAnimationStyle(0.5)}>
-                    Tired of dry sports headlines? I built The Versus Project to inject some energy into how we follow the game. This full-stack app automatically scrapes the latest global football news from across the web and social media. It then uses a unique dual-AI pipeline where one AI extracts the key facts, and a second, fine-tuned model rewrites them into high-energy, <span className="font-bold underline cursor-pointer"><a href="https://www.instagram.com/versus/" target="_blank">@versus</a></span> style captions ready for fans to enjoy.
+    Synthesizing math equations is notoriously tough for the existing voice models. Equate-TTS is a python SDK that aims to solve this problem by having an LLM intelligently spell the math equations out for the tts APIs to synthesize it.
                   </div>
                 </div>
               </div>

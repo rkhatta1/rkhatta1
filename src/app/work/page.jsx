@@ -94,10 +94,10 @@ const Work = () => {
             </div>
             <div className='workItemPrev text-gray-400 flex flex-col space-y-[0.5rem] group' style={getAnimationStyle(0.25)}>
               <div className='self-start px-[0.6rem] py-[0.35rem] flex items-center text-[0.6rem] border-gray-400 border-2 rounded-full group-hover:border-white group-hover:text-white transition duration-300'>
-                Feb. 2023 - June 2023
+                Feb. 2023 - Dec. 2023
               </div>
               <div className='workContent flex flex-col text-start group-hover:text-white' style={{...getAnimationStyle(0.3), transition: `${getAnimationStyle(0).transition}, color 0.3s ease`}}>
-                <div className='workTitle text-[1.1rem] font-semibold '>Software Developer Intern</div>
+                <div className='workTitle text-[1.1rem] font-semibold '>Software Development Engineer, Full Stack</div>
                 <div className='text-sm flex flex-row'><span className='font-semibold mt-[0.2rem]'><CiLocationOn /></span><span className='ml-[0.2rem]'>The Trade Journal Project</span></div>
                 <div className='workDescription text-sm mt-[0.7rem]'>
                   I joined Veeral Patel and his team to work on an AI enabled fintech product. I was majorly responsible for contributing to the authentication pipeline and the logic for the trade instruments, working in a cross-functional team to deliver a high-quality product.

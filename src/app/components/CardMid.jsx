@@ -41,6 +41,7 @@ const CardMid = ({
             width={600}
             height={600}
             className="h-[2.5rem] w-[2.5rem]" 
+            priority={typeOf === 'image'}
           />
         ) : (
           whichIcon

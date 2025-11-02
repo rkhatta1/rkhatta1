@@ -47,7 +47,7 @@ const About = () => {
               height={1080}
               className="rounded-none h-[10rem] w-[22rem] sm:h-[14rem] sm:w-[28rem] lg:h-[15rem] lg:w-[35rem] object-cover"
               style={getBlurStyle(0.1)}
-              unoptimized={true}
+              priority
             />
           </div>
         </div>
