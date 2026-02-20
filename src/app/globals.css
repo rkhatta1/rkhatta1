@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Geist", system-ui, sans-serif;
+  
+  --color-forest-900: #051F20;
+  --color-forest-800: #0B2B26;
+  --color-forest-600: #163832;
+  --color-forest-300: #8EB69B;
+  --color-forest-100: #DAF1DE;
+}
