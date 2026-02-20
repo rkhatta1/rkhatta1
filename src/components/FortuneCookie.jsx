@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const FORTUNES = [
@@ -64,6 +64,10 @@ export default function FortuneCookie() {
   );
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   const lastPos = useRef(null);
+
+  const basePath = useMemo(() => 
+    typeof window !== 'undefined' && process.env.NODE_ENV === 'development' ? '' : '/rkhatta1',
+  []);
 
   useEffect(() => {
     setIsTouchDevice("ontouchstart" in window || navigator.maxTouchPoints > 0);
@@ -169,7 +173,7 @@ export default function FortuneCookie() {
                 transition={{ duration: 0.3 }}
               >
                 <motion.img
-                  src="https://github.com/rkhatta1/rkhatta1/blob/main/public/intact.png"
+                  src={`${basePath}/intact.png`}
                   alt="Fortune cookie"
                   className="w-full h-full object-contain drop-shadow-lg"
                   animate={{
@@ -191,7 +195,7 @@ export default function FortuneCookie() {
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <img
-                  src="https://github.com/rkhatta1/rkhatta1/blob/main/public/broken.png"
+                  src={`${basePath}/broken.png`}
                   alt="Broken fortune cookie"
                   className="w-full h-full object-contain drop-shadow-lg"
                 />
