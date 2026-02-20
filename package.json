@@ -1,6 +1,6 @@
 {
-  "name": "raajveerk-frontend",
-  "version": "1.0.0",
+  "name": "old-portfolio",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,8 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^12.34.2",
-    "next": "15.2.0",
+    "next": "16.1.6",
     "raajveerk-frontend": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
