@@ -169,7 +169,7 @@ export default function FortuneCookie() {
                 transition={{ duration: 0.3 }}
               >
                 <motion.img
-                  src="/intact.png"
+                  src="https://github.com/rkhatta1/rkhatta1/blob/main/public/intact.png"
                   alt="Fortune cookie"
                   className="w-full h-full object-contain drop-shadow-lg"
                   animate={{
@@ -191,7 +191,7 @@ export default function FortuneCookie() {
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <img
-                  src="/broken.png"
+                  src="https://github.com/rkhatta1/rkhatta1/blob/main/public/broken.png"
                   alt="Broken fortune cookie"
                   className="w-full h-full object-contain drop-shadow-lg"
                 />

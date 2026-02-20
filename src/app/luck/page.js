@@ -33,7 +33,7 @@ export default function LuckPage() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#051F20]">
         <img
-          src="/intact.png"
+          src="https://github.com/rkhatta1/rkhatta1/blob/main/public/intact.png"
           alt="Loading..."
           className="w-12 h-12 animate-spin"
           style={{ animationDuration: "1s" }}
@@ -48,7 +48,7 @@ export default function LuckPage() {
         <div className="flex items-center gap-3 md:gap-4">
           <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-[3px] border-forest-600 shrink-0">
             <img
-              src="/pfp.jpg"
+              src="https://github.com/rkhatta1/rkhatta1/blob/main/public/pfp.jpg"
               alt="Raajveer Khattar"
               className="w-full h-full object-cover"
             />
